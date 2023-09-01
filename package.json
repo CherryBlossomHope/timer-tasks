@@ -1,0 +1,12 @@
+{
+  "name": "timertasks",
+  "version": "0.0.8",
+  "description": "设置并管理项目中的定时器",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "timertasks"
+  ],
+  "author": "Wtt",
+  "license": "ISC"
+}
