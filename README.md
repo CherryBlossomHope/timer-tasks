@@ -4,6 +4,7 @@
 ![Static Badge](https://img.shields.io/badge/GitHub-%23000?logo=github)
 
 * ### npm: <https://www.npmjs.com/package/timertasks>
+* ### GitHub: <https://github.com/CherryBlossomHope/timer-tasks>
 
 ### 🎃 支持web项目中定时器 **(setInterval)** 集中管理
 ### 🎄 设置 **Interval**
