@@ -6,19 +6,27 @@ type TimerMapValue = [number, () => void]
  */
 const timerTaskMap = new Map<string, TimerMapValue>()
 
+/** 设置定时任务可选参数 */
+interface TimerParam {
+  /** 设置是否立即执行 */
+  immediate?: boolean
+}
+
 /**
  * @description 设置并开启定时器
  * @param { string } customTimerName 自定义定时器名称
  * @param { Function } timerCallback 设置定时器的回调函数
  * @param { number } executionTime 定时器的执行时间
+ * @param { TimerParam } timerParam 可选配置项
  */
 export function setTimedTask(
   customTimerName: string,
   timerCallback: () => void,
-  executionTime: number
+  executionTime: number,
+  timerParam?:TimerParam
 ): void {
-  // 执行函数
-  timerCallback()
+  // 判断是否需要立即执行
+  if(timerParam?.immediate) timerCallback()
   // 将定时器信息保存到Map中,方便管理
   // * <自定义定时器名称> : [ <定时器ID> , <定时器执行回调函数> ]
   timerTaskMap.set(customTimerName, [setInterval(timerCallback, executionTime), timerCallback])

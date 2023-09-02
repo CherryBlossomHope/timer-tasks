@@ -1,12 +1,23 @@
 {
   "name": "timertasks",
-  "version": "0.0.9",
+  "version": "0.1.2",
   "description": "设置并管理项目中的定时器",
-  "main": "index.js",
+  "author": "Shiina Mashiro <1526566980@qq.com>",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "type": "module",
-  "keywords": [
-    "timertasks"
+  "homepage": "https://github.com/CherryBlossomHope/timer-tasks",
+  "files": [
+    "lib"
   ],
-  "author": "Wtt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CherryBlossomHope/timer-tasks",
+    "directory": "src"
+  },
+  "keywords": [
+    "timertasks",
+    "setInterval"
+  ],
   "license": "ISC"
 }
