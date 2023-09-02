@@ -1,4 +1,4 @@
-type TimerMapValue = [number, () => void]
+type TimerMapValue = [NodeJS.Timeout, () => void]
 
 /**
  * 初始化定时器容器

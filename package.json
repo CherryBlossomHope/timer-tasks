@@ -1,23 +1,38 @@
 {
   "name": "timertasks",
-  "version": "0.1.2",
+  "version": "0.2.3",
   "description": "设置并管理项目中的定时器",
   "author": "Shiina Mashiro <1526566980@qq.com>",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
   "type": "module",
   "homepage": "https://github.com/CherryBlossomHope/timer-tasks",
+  "scripts": {
+    "build": "vite build"
+  },
   "files": [
-    "lib"
+    "dist"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/CherryBlossomHope/timer-tasks",
-    "directory": "src"
+    "directory": "dist"
   },
   "keywords": [
     "timertasks",
     "setInterval"
   ],
-  "license": "ISC"
+  "license": "ISC",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.8",
+    "vite": "^4.4.9",
+    "vite-plugin-dts": "^3.5.3"
+  }
 }
