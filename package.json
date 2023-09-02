@@ -1,6 +1,6 @@
 {
   "name": "timertasks",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "设置并管理项目中的定时器",
   "author": "Shiina Mashiro <1526566980@qq.com>",
   "main": "dist/index.js",
@@ -29,6 +29,7 @@
   "license": "ISC",
   "exports": {
     ".": {
+      "types":"./index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.umd.cjs"
     }
