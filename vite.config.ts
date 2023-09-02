@@ -6,13 +6,15 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'lib/index.ts'),
-      name: 'timertasks',
-      fileName:'index'
+      name: 'Timertasks',
+      fileName: 'index'
     },
   },
   plugins: [
     dts({
-        outDir: './dist',
+      outDir:'./',
+      include:'lib',
+      rollupTypes: true
     }),
-]
+  ]
 })
