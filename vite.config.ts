@@ -1,20 +1,20 @@
-import { resolve } from 'path'
-import { defineConfig } from 'vite'
-import dts from 'vite-plugin-dts';
+import { resolve } from "path";
+import { defineConfig } from "vite";
+import dts from "vite-plugin-dts";
 
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, 'lib/index.ts'),
-      name: 'Timertasks',
-      fileName: 'index'
+      entry: resolve(__dirname, "lib/index.ts"),
+      name: "timertasks",
+      fileName: "index",
     },
   },
   plugins: [
     dts({
-      outDir:'./',
-      include:'lib',
-      rollupTypes: true
+      outDir: "./",
+      include: "lib",
+      rollupTypes: true,
     }),
-  ]
-})
+  ],
+});
